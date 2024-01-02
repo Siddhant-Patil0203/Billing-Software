@@ -21,6 +21,12 @@ export default function Home() {
         </Code>
       </div>
       <Divider orientation="horizontal" />
+
+      {/* Main Grid */}
+      <div className="grid grid-cols-12 gap-1 grid-rows-12">
+        <div className="col-span-12 p-5 bg-pink-600"></div>
+        <div className="col-span-2 row-span-2 p-5 bg-purple-500"></div>
+      </div>
     </>
   );
 }
