@@ -7,6 +7,8 @@ import {
   Select,
   SelectItem,
   Input,
+  Card,
+  CardBody,
 } from "@nextui-org/react";
 
 import { SelectorIcon } from "./SelectorIcon";
@@ -50,17 +52,47 @@ export default function Home() {
         </div>
 
         {/* Bill Details */}
-        <div className="col-span-3 p-3 text-left border-slate-400 text-md border-1">
-          NO.: ASDE/2024/100
+        <div className="col-span-3 p-1 text-sm text-left border-slate-400 border-1">
+          <Input
+            isReadOnly
+            type="text"
+            label="No.:"
+            variant="flat"
+            labelPlacement="outside-left"
+            defaultValue="ASDE/2024/100"
+          />
         </div>
-        <div className="col-span-3 p-3 text-left border-slate-400 text-md border-1">
-          DATE: 08/01/2024
+        <div className="col-span-3 p-1 text-sm text-left border-slate-400 border-1">
+          
+          <Input
+            isReadOnly
+            type="text"
+            label="Date:"
+            variant="flat"
+            labelPlacement="outside-left"
+            defaultValue="08/01/2024"
+          />
         </div>
-        <div className="col-span-3 p-3 text-left border-slate-400 text-md border-1">
-          GSTIN: 27AYPPD8713N1ZT
+        <div className="col-span-3 p-1 text-sm text-left border-slate-400 border-1">
+           
+          <Input
+            isReadOnly
+            type="text"
+            label="GSTIN:"
+            variant="flat"
+            labelPlacement="outside-left"
+            defaultValue="27AYPPD8713N1ZT"
+          />
         </div>
-        <div className="col-span-3 p-3 text-left border-slate-400 text-md border-1">
-          STATE: MAHARASHTRA
+        <div className="col-span-3 p-1 text-sm text-left border-slate-400 border-1">
+          <Input
+            isReadOnly
+            type="text"
+            label="STATE:"
+            variant="flat"
+            labelPlacement="outside-left"
+            defaultValue="MAHARASHTRA"
+          />
         </div>
 
         {/* Deatils of Reciever */}
@@ -168,13 +200,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 2*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -203,13 +235,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 3*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -238,13 +270,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 4*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -273,13 +305,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 5*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -308,13 +340,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 6*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -343,13 +375,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 7*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -378,13 +410,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 8*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -413,13 +445,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 9*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -448,13 +480,13 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Items 10*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -483,16 +515,18 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
 
         {/* Total */}
-        <div className="col-span-6 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-6 pr-4 font-semibold text-right text-md border-slate-400 border-1">
+          Total :
+        </div>
         <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
         <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
         <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
@@ -503,17 +537,51 @@ export default function Home() {
 
       {/* Declaration & Total Sum */}
       <div className="grid grid-cols-12 gap-0 grid-rows-12">
-        <div className="col-span-6 row-span-3 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-5 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-5 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-2xl text-center border-slate-400 border-1"></div>
-        <div className="col-span-6 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-6 row-span-3 pt-1 pl-2 text-sm font-semibold text-left border-slate-400 border-1">
+          50% Advance with Work Order / PO <br />
+          50% After Completion of Work
+        </div>
+        <div className="col-span-5 p-0 text-sm font-semibold text-center border-slate-400 border-1">
+          GST AMOUNT
+        </div>
+        <div className="col-span-1 p-0 text-sm text-right border-slate-400 border-1"></div>
+        <div className="col-span-5 p-0 text-sm font-semibold text-center border-slate-400 border-1">
+          Total Amount
+        </div>
+        <div className="col-span-1 p-0 text-sm text-right border-slate-400 border-1"></div>
+        <div className="col-span-6 p-0 text-sm text-center border-slate-400 border-1">
+          Certifies that the perticulars given above are true and correct
+        </div>
 
-        <div className="col-span-12 row-span-3 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="flex justify-between col-span-12 row-span-3 px-2 py-1 text-sm border-slate-400 border-1">
+          <div>
+            Without GSTIN :{" "}
+            <span className="font-semibold">
+              Five Thousand One Hundred Nine Only
+            </span>{" "}
+            <br />
+            GSTIN :{" "}
+            <span className="font-semibold">
+              NineHundred Nineteen and Sixty Two Paise Only
+            </span>{" "}
+            <br />
+            Total :{" "}
+            <span className="font-semibold">
+              Six Thousand Twenty Six and Sixty Two Paise Only
+            </span>
+          </div>
+          <div className="flex flex-col justify-between pr-6 text-center">
+            <div>For ASD ENTERPRISES </div>
+            <div>Proprietor</div>
+          </div>
+        </div>
 
         {/* Address */}
-        <div className="col-span-12 row-span-2 p-2 text-2xl text-center border-slate-400 border-1"></div>
+        <div className="col-span-12 row-span-2 p-1 text-sm text-center border-slate-400 border-1">
+          Plot No. 91, Shilpa Society, Narendra Nagar, Manish Nagar Road, Beside
+          NIT Garden, Nagpur - 440015 <br />
+          Email : asdenterprisesnagpur@gmall.com
+        </div>
       </div>
     </>
   );
