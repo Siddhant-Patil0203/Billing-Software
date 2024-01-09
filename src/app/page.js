@@ -63,7 +63,6 @@ export default function Home() {
           />
         </div>
         <div className="col-span-3 p-1 text-sm text-left border-slate-400 border-1">
-          
           <Input
             isReadOnly
             type="text"
@@ -74,7 +73,6 @@ export default function Home() {
           />
         </div>
         <div className="col-span-3 p-1 text-sm text-left border-slate-400 border-1">
-           
           <Input
             isReadOnly
             type="text"
@@ -200,13 +198,57 @@ export default function Home() {
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 2*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -230,18 +272,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 3*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -265,18 +350,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 4*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -300,18 +428,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 5*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -335,18 +506,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 6*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -370,18 +584,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 7*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -405,18 +662,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 8*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -440,18 +740,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 9*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -475,18 +818,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Items 10*/}
         <div className="col-span-1 p-3 text-sm text-center border-slate-400 border-1">
@@ -510,18 +896,61 @@ export default function Home() {
         <div className="col-span-1 p-1 text-2xl text-center border-slate-400 border-1">
           <Input
             type="number"
-            placeholder="00"
+            placeholder=""
             variant="underlinded"
             labelPlacement="outside-left"
           />
         </div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
-        <div className="col-span-1 p-2 text-center text-md border-slate-400 border-1"></div>
+        <div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div><div className="col-span-1 p-1 text-center text-md border-slate-400 border-1">
+          <Input
+            type="text"
+            placeholder=""
+            variant="underlinded"
+            labelPlacement="outside-left"
+          />
+        </div>
 
         {/* Total */}
         <div className="col-span-6 pr-4 font-semibold text-right text-md border-slate-400 border-1">
