@@ -77,17 +77,17 @@ const Login = () => {
   // const token = queryParams.get("token");
   // const userResult = queryParams.get("result");
   // console.log(token, userResult);
-  if (token && userResult) {
+  // if (token && userResult) {
     // useEffect(() => {
-      setIsLoading(true);
-      const userG = {};
-      userG.result = JSON.parse(userResult); // Parse the userResult JSON string into an object
-      userG.token = token;
-      localStorage.setItem("user", JSON.stringify(userG));
-      setUser(JSON.parse(localStorage.getItem("user")));
+      // setIsLoading(true);
+      // const userG = {};
+      // userG.result = JSON.parse(userResult); // Parse the userResult JSON string into an object
+      // userG.token = token;
+      // localStorage.setItem("user", JSON.stringify(userG));
+      // setUser(JSON.parse(localStorage.getItem("user")));
       
-      setIsLoading(false);
-      navigateTo("/");
+      // setIsLoading(false);
+      // navigateTo("/");
     // }, []);
   }
 
