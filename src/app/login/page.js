@@ -78,7 +78,7 @@ const Login = () => {
   const userResult = queryParams.get("result");
   // console.log(token, userResult);
   if (token && userResult) {
-    useEffect(() => {
+    // useEffect(() => {
       setIsLoading(true);
       const userG = {};
       userG.result = JSON.parse(userResult); // Parse the userResult JSON string into an object
@@ -88,7 +88,7 @@ const Login = () => {
       
       setIsLoading(false);
       navigateTo("/");
-    }, []);
+    // }, []);
   }
 
   return (
