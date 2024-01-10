@@ -74,8 +74,8 @@ const Login = () => {
   };
   //Google Auth Redirect
   // const queryParams = new URLSearchParams(window.location.search);
-  const token = queryParams.get("token");
-  const userResult = queryParams.get("result");
+  // const token = queryParams.get("token");
+  // const userResult = queryParams.get("result");
   // console.log(token, userResult);
   if (token && userResult) {
     // useEffect(() => {
