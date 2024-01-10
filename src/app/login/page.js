@@ -70,10 +70,10 @@ const Login = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    window.location.href = "https://sidd-template-react-server.vercel.app/auth/google";
+    // window.location.href = "https://sidd-template-react-server.vercel.app/auth/google";
   };
   //Google Auth Redirect
-  const queryParams = new URLSearchParams(window.location.search);
+  // const queryParams = new URLSearchParams(window.location.search);
   const token = queryParams.get("token");
   const userResult = queryParams.get("result");
   // console.log(token, userResult);
