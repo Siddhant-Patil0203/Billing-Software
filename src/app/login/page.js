@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 // import Loader from "../components/Loader";
 import Validator from "../contexts/Validator.js";
-// import { Link, useNavigate } from "react-router-dom";
+import Link from 'next/link'
 // import axios from "../axios.js";
 import { useGlobalContext } from "../contexts/GlobalContext.jsx";
 import { useTheme } from "next-themes";
@@ -23,7 +23,7 @@ const Login = () => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [serverMsg, setServerMsg] = useState("");
-//   const navigateTo = useNavigate();
+  //   const navigateTo = useNavigate();
   const { user, setUser } = useGlobalContext();
 
   useEffect(() => {
@@ -78,23 +78,23 @@ const Login = () => {
   // const userResult = queryParams.get("result");
   // console.log(token, userResult);
   // if (token && userResult) {
-    // useEffect(() => {
-      // setIsLoading(true);
-      // const userG = {};
-      // userG.result = JSON.parse(userResult); // Parse the userResult JSON string into an object
-      // userG.token = token;
-      // localStorage.setItem("user", JSON.stringify(userG));
-      // setUser(JSON.parse(localStorage.getItem("user")));
-      
-      // setIsLoading(false);
-      // navigateTo("/");
-    // }, []);
+  // useEffect(() => {
+  // setIsLoading(true);
+  // const userG = {};
+  // userG.result = JSON.parse(userResult); // Parse the userResult JSON string into an object
+  // userG.token = token;
+  // localStorage.setItem("user", JSON.stringify(userG));
+  // setUser(JSON.parse(localStorage.getItem("user")));
+
+  // setIsLoading(false);
+  // navigateTo("/");
+  // }, []);
   // }
 
   return (
     <>
       {/* {isLoading ? <Loader width="500px" height="250px" /> : null} */}
-      <div className="flex justify-between m-5 text-2xl text-center">
+      <div className="flex items-center justify-between m-5 text-2xl text-center">
         Login
         <Switch
           defaultSelected
@@ -116,60 +116,65 @@ const Login = () => {
           }}
         />
       </div>
-      <form onSubmit={handleSumbmit}>
-        <Input
-          type="email"
-          label="Email"
-          name="email"
-          id="email"
-          value={form.email}
-          onChange={handleChange}
-          isInvalid={errors.email ? true : false}
-          isRequired
-          variant="underlined"
-          className="m-3 w-[300px]"
-        />
-        {errors.email && <div className="m-2 text-red-500">{errors.email}</div>}
-        <Input
-          type="password"
-          label="Password"
-          name="password"
-          id="password"
-          value={form.password}
-          onChange={handleChange}
-          isInvalid={errors.password ? true : false}
-          isRequired
-          variant="underlined"
-          className="m-3 w-[300px]"
-        />
-        {errors.password && (
-          <div className="p-1 m-2 text-red-500">{errors.password}</div>
-        )}
-        <Button
-          type="submit"
-          className="flex m-2 "
-          color="primary"
-          variant="shadow"
-          isLoading={isLoading}
-        >
-          Sign in
-        </Button>
-        <Button
-          onClick={googleSignin}
-          className="flex m-2"
-          color="primary"
-          variant="shadow"
-          isLoading={isLoading}
-          startContent={<ImGoogle />}
-        >
-          Sign in with Google
-        </Button>
-        {serverMsg && <div className="p-1 m-2 text-red-500">{serverMsg}</div>}
-      </form>
+      <div className="flex items-center justify-center align-middle h-[80vh]">
+        <form onSubmit={handleSumbmit} className="flex flex-col items-center justify-center">
+          <Input
+            type="email"
+            label="Email"
+            name="email"
+            id="email"
+            value={form.email}
+            onChange={handleChange}
+            isInvalid={errors.email ? true : false}
+            isRequired
+            variant="underlined"
+            className="m-3 w-[300px]"
+          />
+          {errors.email && (
+            <div className="m-2 text-red-500">{errors.email}</div>
+          )}
+          <Input
+            type="password"
+            label="Password"
+            name="password"
+            id="password"
+            value={form.password}
+            onChange={handleChange}
+            isInvalid={errors.password ? true : false}
+            isRequired
+            variant="underlined"
+            className="m-3 w-[300px]"
+          />
+          {errors.password && (
+            <div className="p-1 m-2 text-red-500">{errors.password}</div>
+          )}
+          <Button
+            type="submit"
+            className="flex w-full m-2"
+            color="primary"
+            variant="shadow"
+            isLoading={isLoading}
+          >
+            Sign in
+          </Button>
+          <div>or</div>
+          <Button
+            onClick={googleSignin}
+            className="flex w-full m-2"
+            color="primary"
+            variant="shadow"
+            isLoading={isLoading}
+            startContent={<ImGoogle />}
+          >
+            Sign in with Google
+          </Button>
+          {serverMsg && <div className="p-1 m-2 text-red-500">{serverMsg}</div>}
+          <div><Link href="/">Register?</Link></div>
+        </form>
+        {/* <Link to="/register" className="p-2 m-2 text-primary"> */}
 
-      {/* <Link to="/register" className="p-2 m-2 text-primary"> */}
-        Register?
-      {/* </Link> */}
+        {/* </Link> */}
+      </div>
     </>
   );
 };
