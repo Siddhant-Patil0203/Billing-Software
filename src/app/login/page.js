@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation'; // Added missing import
 // import Loader from "../components/Loader";
 import Validator from "../contexts/Validator.js";
 import Link from 'next/link'
@@ -23,12 +24,16 @@ const Login = () => {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [serverMsg, setServerMsg] = useState("");
-  //   const navigateTo = useNavigate();
-  const { user, setUser } = useGlobalContext();
+  const { login, isAuthenticated, loading } = useGlobalContext(); // Use login from context
+  // const { theme, setTheme } = useTheme(); // This line is the duplicate, removed. The one on line 20 is kept.
+  const router = useRouter(); // For navigation (already imported in GlobalContext)
 
   useEffect(() => {
-    console.log(user);
-  }, []);
+    if (isAuthenticated && !loading) {
+      router.push('/invoices'); // Redirect if already authenticated
+    }
+  }, [isAuthenticated, loading, router]);
+
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -42,36 +47,55 @@ const Login = () => {
 
   const handleSumbmit = async (e) => {
     e.preventDefault();
-
+    setServerMsg(""); // Clear previous server messages
     const validationErrors = Validator(form);
-    if (Object.keys(validationErrors).length === 0) {
-      setIsLoading(true);
-
-      try {
-        const res = await axios.post("/user/signin", form);
-        const result = res.data;
-        localStorage.setItem("user", JSON.stringify({ ...result }));
-        setUser(JSON.parse(localStorage.getItem("user")));
-
-        setIsLoading(false);
-        navigateTo("/");
-      } catch (error) {
-        setIsLoading(false);
-        setServerMsg(
-          error.response.data.message || "Server error please try again later"
-        );
-      }
-    } else {
+    if (Object.keys(validationErrors).length !== 0) {
       setErrors(validationErrors);
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        login(data.user, data.token); // Use context login function
+        // Redirect is handled by the login function or useEffect
+      } else {
+        setServerMsg(data.message || 'Login failed. Please try again.');
+      }
+    } catch (error) {
+      console.error('Login API error:', error);
+      setServerMsg('An unexpected error occurred. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
+  // Google Sign-in can be re-implemented later if needed
   const googleSignin = async (e) => {
     e.preventDefault();
-    setIsLoading(true);
-
-    // window.location.href = "https://sidd-template-react-server.vercel.app/auth/google";
+    setServerMsg("Google Sign-in is not implemented yet.");
+    // setIsLoading(true);
+    // Potentially redirect to /api/auth/google if that's a backend route
   };
+
+  if (loading || isAuthenticated) {
+    // Show loader while checking auth or if already authenticated (will redirect)
+    return (
+      <div className="flex items-center justify-center h-screen">
+        {/* Replace with a proper Loader component if available */}
+        <div>Loading...</div> 
+      </div>
+    );
+  }
+  
   //Google Auth Redirect
   // const queryParams = new URLSearchParams(window.location.search);
   // const token = queryParams.get("token");
@@ -125,7 +149,7 @@ const Login = () => {
             id="email"
             value={form.email}
             onChange={handleChange}
-            isInvalid={errors.email ? true : false}
+            isInvalid={!!errors.email} // Changed here
             isRequired
             variant="underlined"
             className="m-3 w-[300px]"
@@ -140,7 +164,7 @@ const Login = () => {
             id="password"
             value={form.password}
             onChange={handleChange}
-            isInvalid={errors.password ? true : false}
+            isInvalid={!!errors.password} // Changed here
             isRequired
             variant="underlined"
             className="m-3 w-[300px]"
@@ -169,11 +193,8 @@ const Login = () => {
             Sign in with Google
           </Button>
           {serverMsg && <div className="p-1 m-2 text-red-500">{serverMsg}</div>}
-          <div><Link href="/">Register?</Link></div>
+          <div><Link href="/signup">Register?</Link></div>
         </form>
-        {/* <Link to="/register" className="p-2 m-2 text-primary"> */}
-
-        {/* </Link> */}
       </div>
     </>
   );
